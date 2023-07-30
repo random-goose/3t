@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <script
+        src="https://kit.fontawesome.com/3bfd3ce9e5.js"
+        crossorigin="anonymous"
+    ></script>
+
+    <style>
+        body {
+          font-family: "Montserrat", sans-serif;
+        }
+    </style>
+    <title>TicTacToe</title>
+    <body>
+
+        <main>
+            <div class="grid" >
+                <div class="turn">
+                    <i class="fa-solid fa-x turquoise"></i>
+                    <p class="turquoise">Player 1's Turn</p>
+                </div>
+
+
+                <div class="menu">
+                        <button class="menu-button">
+                            ···
+                        </button>
+
+                    <div class="items hidden">
+                        <button style="font-size: 10px;">Reset</button>
+                        <button style="font-size: 10px;">New Game</button>
+                    </div>
+                </div>
+
+
+                <div class="square shadow"></div>
+                <div class="square shadow"></div>
+                <div class="square shadow"></div>
+                <div class="square shadow"></div>
+                <div class="square shadow"></div>
+                <div class="square shadow"></div>
+                <div class="square shadow"></div>
+                <div class="square shadow"></div>
+                <div class="square shadow"></div>
+                
+                
+                <div class="score shadow" style="background-color: cornflowerblue">
+                    <p>Player 1</p>
+                    <span data-id="p1-wins">0 Wins</span>
+                </div>
+                <div class="score shadow">
+                    <p>Ties</p>
+                    <span data-id="ties">0</span>
+                </div>
+                <div class="score shadow" style="background-color: #47f288">
+                    <p>Player 2</p>
+                    <span data-id="p2-wins">0 Wins</span>
+                
+                </div>
+        </main>
+      
+
+        <div class="modal hidden" data-id="modal">
+            <div class="modal-contents">
+              <p data-id="modal-text">Player 1 wins!</p>
+              <button data-id="modal-btn">Play again</button>
+            </div>
+          </div>
+
+          <footer>
+            <p>
+                made by wix.
+            </p>
+          </footer>
+
+          <script src="src.js"></script>
+
+    </body>
+</html>
